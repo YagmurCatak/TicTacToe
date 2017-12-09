@@ -8,13 +8,13 @@ namespace TicTacToeOyunu
 {
     class Oyuncu
     {
-        char harf;
-        string id;
-        Boolean oyuncutip; //bilgisayarsa false, insansa true 
+        public char harf;
+        public string id;
+        public Boolean oyuncutip; //bilgisayarsa false, insansa true 
 
+        //insan olan oyuncuya X harfini ve insan olma özelliğine true değerini atar.
         public Oyuncu()
         {
-            //insan olan oyuncuya X harfini ve insan olma özelliğine true değerini atar.
             this.oyuncutip = true;
             this.harf = 'X'; 
         }
@@ -42,24 +42,24 @@ namespace TicTacToeOyunu
             }
         }
 
-        char karakteriAl()
+        public char karakteriAl()
         {
             return harf;
         }
 
-        Boolean oyuncuTurunuAl()
+        public Boolean oyuncuTurunuAl()
         {
             return oyuncutip;
         }
 
-        string oyuncununHamlesiniAl()
+        public string oyuncununHamlesiniAl()
         {
             string hamle = "X";
             return hamle;
         }
 
         //insan olan oyuncuyu hamle yapması için uyaran ve klavyeden kullanıcı tarafından girilen hamleyi alıp, döndüren bir metot
-        string insanOyuncuHamlesiniKotrol()
+        public string insanOyuncuHamlesiniKotrol()
         {
             Console.WriteLine("hamlenizi yapınız");
             string hamle = "";
@@ -68,17 +68,12 @@ namespace TicTacToeOyunu
         }
         
         //random olarak bilgisayar için oyun tahtası üzerinde bir hamle koordinatı döndüren bir metot.
-        string bilgisayarHamlesiUret()
+        public string bilgisayarHamlesiUret()
         {
             Random rastgele = new Random();
             int sayi = rastgele.Next(0,7);
             string konum = sayi.ToString();
             return konum;
-        }
-
-        public void main()
-        {
-           
         }
        
     }
