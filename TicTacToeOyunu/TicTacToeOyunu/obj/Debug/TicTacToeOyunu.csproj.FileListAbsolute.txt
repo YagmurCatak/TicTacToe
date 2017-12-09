@@ -1,0 +1,5 @@
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\bin\Debug\TicTacToeOyunu.exe.config
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.csprojResolveAssemblyReference.cache
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.Form1.resources
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.Properties.Resources.resources
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.csproj.GenerateResource.Cache
