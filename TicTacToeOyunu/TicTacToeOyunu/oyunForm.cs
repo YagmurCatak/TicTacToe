@@ -44,7 +44,7 @@ namespace TicTacToeOyunu
                     Button buton = new Button();
                     buton.Height = 50;
                     buton.Width = 50;
-                    buton.Location = new System.Drawing.Point(90 + i * buton.Height + 5, 150 + j* buton.Width + 5);
+                    buton.Location = new System.Drawing.Point(50 + i * buton.Height + 5, 50 + j* buton.Width + 5);
                     buton.Name = "btn-" + i + "-" +j.ToString();
 
                     buton.Click += new System.EventHandler(this.boyutButtonClick);
@@ -76,7 +76,7 @@ namespace TicTacToeOyunu
             kontrol = tahta.hamleyiYaz(koordinantx, koordinanty, oyuncu1.harf);
             if (kontrol == true)
                 clickedButton.Text = oyuncu1.harf.ToString();
-            
+           
         }
         
     }

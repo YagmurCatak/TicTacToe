@@ -45,10 +45,7 @@ namespace TicTacToeOyunu
         //dolu ise false döndüren bir metot.
         public Boolean hamleyiYaz(int koordinatX, int koordinatY, char oyuncuHamlesi)
         {
-            string kiyas = " ";
-            int sonuc = string.Compare(tahta[koordinatX, koordinatY].ToString(),kiyas.ToString());
-
-            if (sonuc == 0 )
+            if (tahta[koordinatX,koordinatY].Equals('\0'))
             {
                 tahta[koordinatX, koordinatY] = oyuncuHamlesi;
                 return true;

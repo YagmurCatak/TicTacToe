@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Size = new System.Drawing.Size(500,500);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblbasilan = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -59,21 +57,11 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 2;
             // 
-            // lblbasilan
-            // 
-            this.lblbasilan.AutoSize = true;
-            this.lblbasilan.Location = new System.Drawing.Point(49, 29);
-            this.lblbasilan.Name = "lblbasilan";
-            this.lblbasilan.Size = new System.Drawing.Size(50, 13);
-            this.lblbasilan.TabIndex = 3;
-            this.lblbasilan.Text = "lblbasilan";
-            // 
             // oyunForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.lblbasilan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -89,7 +77,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblbasilan;
 
     }
 }

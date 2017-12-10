@@ -38,10 +38,10 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // id
+            // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(202, 52);
-            this.txtid.Name = "id";
+            this.txtid.Location = new System.Drawing.Point(202, 20);
+            this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(100, 20);
             this.txtid.TabIndex = 2;
             // 
@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(76, 55);
+            this.label1.Location = new System.Drawing.Point(76, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 17);
             this.label1.TabIndex = 3;
@@ -69,16 +69,16 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(37, 21);
+            this.label3.Location = new System.Drawing.Point(37, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Oyun Tahta Boyutu:";
             // 
-            // boyut
+            // txtboyut
             // 
-            this.txtboyut.Location = new System.Drawing.Point(202, 21);
-            this.txtboyut.Name = "boyut";
+            this.txtboyut.Location = new System.Drawing.Point(202, 54);
+            this.txtboyut.Name = "txtboyut";
             this.txtboyut.Size = new System.Drawing.Size(100, 20);
             this.txtboyut.TabIndex = 6;
             // 

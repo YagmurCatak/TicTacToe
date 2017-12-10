@@ -30,8 +30,7 @@ namespace TicTacToeOyunu
         private void button1_Click(object sender, EventArgs e)
         {
             Oyuncu oyuncu1 = new Oyuncu();
-            OyunTahtasi tahta = new OyunTahtasi();
-            tahta.tahtaBoyutu = Convert.ToInt32(txtboyut.Text.ToString());
+            OyunTahtasi tahta = new OyunTahtasi(Convert.ToInt32(txtboyut.Text.ToString()));
 
             oyuncu1.id = txtid.Text.ToString();
 
