@@ -63,6 +63,12 @@
       <DependentUpon>Oyun.cs</DependentUpon>
     </Compile>
     <Compile Include="Oyuncu.cs" />
+    <Compile Include="oyunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oyunForm.Designer.cs">
+      <DependentUpon>oyunForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OyunTahtasi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Oyun.resx">
       <DependentUpon>Oyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oyunForm.resx">
+      <DependentUpon>oyunForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
