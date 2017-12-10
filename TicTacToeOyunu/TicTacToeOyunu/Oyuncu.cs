@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TicTacToeOyunu
 {
-    class Oyuncu
+    public class Oyuncu
     {
-        public char harf;
-        public string id;
-        public Boolean oyuncutip; //bilgisayarsa false, insansa true 
+        public char harf { get; set; }
+        public string id { get; set; }
+        public Boolean oyuncutip { get; set; } //bilgisayarsa false, insansa true 
 
         //insan olan oyuncuya X harfini ve insan olma özelliğine true değerini atar.
         public Oyuncu()

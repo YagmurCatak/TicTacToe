@@ -20,7 +20,7 @@ namespace TicTacToeOyunu
 
         public static string id;
         public static string boyut;
-        public static Boolean harf;
+        public static string harf;
 
         private void Oyun_Load(object sender, EventArgs e)
         {
@@ -29,17 +29,19 @@ namespace TicTacToeOyunu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Oyuncu oyuncu1 = new Oyuncu();
+            OyunTahtasi tahta = new OyunTahtasi();
+            tahta.tahtaBoyutu = Convert.ToInt32(txtboyut.Text.ToString());
 
-            boyut = txtboyut.Text.ToString();
-            id = txtid.Text.ToString();
+            oyuncu1.id = txtid.Text.ToString();
 
             if (radioButton1.Checked == true)
-                harf = radioButton1.Checked;//true dönerse, x seçilmiş demektir.
+                oyuncu1.harf = 'X';//true dönerse, x seçilmiş demektir.
             else
-                harf = radioButton2.Checked;
+                oyuncu1.harf = 'O';
 
-            oyunForm oyunForm = new oyunForm();
+            //oyunForm oyunForm = new oyunForm(id, boyut, harf);
+            oyunForm oyunForm = new oyunForm(oyuncu1,tahta);
             oyunForm.ShowDialog();
         }
 

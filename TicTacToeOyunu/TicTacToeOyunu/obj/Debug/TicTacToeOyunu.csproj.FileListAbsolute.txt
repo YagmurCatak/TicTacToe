@@ -3,3 +3,10 @@ C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\Ti
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.Form1.resources
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.Properties.Resources.resources
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.csproj.GenerateResource.Cache
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\bin\Debug\TicTacToeOyunu.exe
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\bin\Debug\TicTacToeOyunu.pdb
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.KayitliOyun.resources
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.Oyun.resources
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.oyunForm.resources
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.exe
+C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Debug\TicTacToeOyunu.pdb

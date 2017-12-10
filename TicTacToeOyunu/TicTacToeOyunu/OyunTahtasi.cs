@@ -8,8 +8,8 @@ namespace TicTacToeOyunu
 {
     public class OyunTahtasi
     {
-        public char[,] tahta;
-        public int tahtaBoyutu;
+        public char[,] tahta { get; set; }
+        public int tahtaBoyutu { get; set; }
 
         public OyunTahtasi()
         { 
@@ -21,7 +21,7 @@ namespace TicTacToeOyunu
             if (tahtaBoyutu > 7)
                 throw new Exception("tahta boyutu 7'den buyuk olamaz");  
             tahta = new char[this.tahtaBoyutu, this.tahtaBoyutu];
-           
+
         }
 
         public OyunTahtasi(char[,] oynTahtasi,int tahtaBoyutu) 
@@ -45,7 +45,10 @@ namespace TicTacToeOyunu
         //dolu ise false döndüren bir metot.
         public Boolean hamleyiYaz(int koordinatX, int koordinatY, char oyuncuHamlesi)
         {
-            if (tahta[koordinatX, koordinatY].Equals(' '))
+            string kiyas = " ";
+            int sonuc = string.Compare(tahta[koordinatX, koordinatY].ToString(),kiyas.ToString());
+
+            if (sonuc == 0 )
             {
                 tahta[koordinatX, koordinatY] = oyuncuHamlesi;
                 return true;
