@@ -68,11 +68,13 @@ namespace TicTacToeOyunu
         }
         
         //random olarak bilgisayar için oyun tahtası üzerinde bir hamle koordinatı döndüren bir metot.
-        public string bilgisayarHamlesiUret()
+        public string[] bilgisayarHamlesiUret(int tahtaboyutu)
         {
             Random rastgele = new Random();
-            int sayi = rastgele.Next(0,7);
-            string konum = sayi.ToString();
+            int satir = rastgele.Next(0, tahtaboyutu);
+            int sutun = rastgele.Next(0, tahtaboyutu);
+
+            string[] konum = {satir.ToString(),sutun.ToString()};
             return konum;
         }
        

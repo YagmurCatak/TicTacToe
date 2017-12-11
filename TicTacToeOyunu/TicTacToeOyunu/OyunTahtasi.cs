@@ -102,9 +102,29 @@ namespace TicTacToeOyunu
 
         }
 
-        Boolean beraberlikKontrol()
+        //tahta da boş buton kalmadıysa ve kazanan yoksa. 
+        public Boolean beraberlikKontrol()
         {
-            return true;
+            int beraberlik=0;
+
+            for (int i = 0; i < tahtaBoyutu; i++)
+            {
+                for (int j = 0; j < tahtaBoyutu; j++)
+                {
+                    if (tahta[i, j].Equals('\0'))
+                    {
+                        beraberlik = 0;
+                        break;
+                    }
+                    else
+                        beraberlik = 1;
+                }
+            }
+            if (beraberlik == 1)
+                return true;
+            else
+                return false;
+                
         }
     }
 }

@@ -29,18 +29,26 @@ namespace TicTacToeOyunu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Oyuncu oyuncu1 = new Oyuncu();
+            Oyuncu oyuncu1 = new Oyuncu();//oyuncu kullanici 'x'
+            Oyuncu oyuncu2 = new Oyuncu();//oyuncu bilgisayar 'O' 
+
             OyunTahtasi tahta = new OyunTahtasi(Convert.ToInt32(txtboyut.Text.ToString()));
 
             oyuncu1.id = txtid.Text.ToString();
 
             if (radioButton1.Checked == true)
+            {
                 oyuncu1.harf = 'X';//true dönerse, x seçilmiş demektir.
-            else
-                oyuncu1.harf = 'O';
+                oyuncu2.harf = 'O';
+            }
 
-            //oyunForm oyunForm = new oyunForm(id, boyut, harf);
-            oyunForm oyunForm = new oyunForm(oyuncu1,tahta);
+            else
+            {
+                oyuncu1.harf = 'O';
+                oyuncu2.harf = 'X';
+            }
+                
+            oyunForm oyunForm = new oyunForm(oyuncu1,oyuncu2,tahta);
             oyunForm.ShowDialog();
         }
 
