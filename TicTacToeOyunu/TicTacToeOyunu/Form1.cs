@@ -44,7 +44,7 @@ namespace TicTacToeOyunu
             String full = sr.ReadToEnd();
 
             String[] rows = full.Split('\n');
-            int tahtaBoyut = rows[0].Count(f => f == '-');
+            int tahtaBoyut = rows.Length;
             char[,] tahta = new char[tahtaBoyut, tahtaBoyut];
 
             List<char[]> rowList = new List<char[]>();
@@ -63,6 +63,7 @@ namespace TicTacToeOyunu
                     if (rowList.ElementAt(i)[j] == 'X')
                     {
                         tahta[i, j] = 'X';
+                        MessageBox.Show("tahta"+tahta[i,j]);
                     }
                     else if (rowList.ElementAt(i)[j] == 'O')
                     {
@@ -75,6 +76,8 @@ namespace TicTacToeOyunu
 
                 }
             }
+
+            
 
             KayitliOyun kayitli = new KayitliOyun();
             kayitli.Show();

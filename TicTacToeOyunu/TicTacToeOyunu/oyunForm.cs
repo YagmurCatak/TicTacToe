@@ -123,7 +123,7 @@ namespace TicTacToeOyunu
 
                 } while (bilHamlekontrol);
 
-                butonMatris[bilgisayarX, bilgisayarY].Text = oyuncu2.harf.ToString();
+                butonMatris[bilgisayarY, bilgisayarX].Text = oyuncu2.harf.ToString();
 
                 
                
@@ -146,7 +146,6 @@ namespace TicTacToeOyunu
                     }
                 }
             }
-
 
 
 
@@ -228,7 +227,7 @@ namespace TicTacToeOyunu
             {
                 for (int j = 0; j < tahta.tahtaBoyutu; j++)
                 {
-                    write.Write(tahta.tahta[i,j]+ "-");
+                    write.Write(tahta.tahta[i,j]);
                 }
                 write.WriteLine();
             }

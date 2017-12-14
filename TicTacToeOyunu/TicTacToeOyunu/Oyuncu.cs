@@ -74,7 +74,7 @@ namespace TicTacToeOyunu
 
             int satir = rastgele.Next(0, tahtaboyutu);
             int sutun = rastgele.Next(0, tahtaboyutu);
-            string[] konum = {satir.ToString(),sutun.ToString()};
+            string[] konum = {sutun.ToString(),satir.ToString()};
 
             return konum;
         }
