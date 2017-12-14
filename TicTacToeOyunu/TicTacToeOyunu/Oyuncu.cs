@@ -71,10 +71,11 @@ namespace TicTacToeOyunu
         public string[] bilgisayarHamlesiUret(int tahtaboyutu)
         {
             Random rastgele = new Random();
+
             int satir = rastgele.Next(0, tahtaboyutu);
             int sutun = rastgele.Next(0, tahtaboyutu);
-
             string[] konum = {satir.ToString(),sutun.ToString()};
+
             return konum;
         }
        

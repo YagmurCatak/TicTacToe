@@ -45,13 +45,15 @@ namespace TicTacToeOyunu
         //dolu ise false döndüren bir metot.
         public Boolean hamleyiYaz(int koordinatX, int koordinatY, char oyuncuHamlesi)
         {
-            if (tahta[koordinatX,koordinatY].Equals('\0'))
+            if (tahta[koordinatX, koordinatY].Equals('X') || tahta[koordinatX, koordinatY].Equals('O'))
+            {
+                return false;
+            }
+            else
             {
                 tahta[koordinatX, koordinatY] = oyuncuHamlesi;
                 return true;
             }
-            else
-                return false;
         }
 
         //parametre olarak oyuncunun kullandığı harfi, tahtaboyutunu ve kullanıcı idsini alır.

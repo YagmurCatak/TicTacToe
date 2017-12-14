@@ -61,12 +61,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "oyunForm";
             this.Text = "oyunForm";
+            this.Load += new System.EventHandler(this.oyunForm_Load);
+            this.FormClosing += this.oyunForm_FormClosing;
             this.ResumeLayout(false);
             this.PerformLayout();
 

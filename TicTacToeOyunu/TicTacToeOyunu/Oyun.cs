@@ -36,9 +36,9 @@ namespace TicTacToeOyunu
 
             oyuncu1.id = txtid.Text.ToString();
 
-            if (radioButton1.Checked == true)
+            if (radioButtonX.Checked == true)
             {
-                oyuncu1.harf = 'X';//true dönerse, x seçilmiş demektir.
+                oyuncu1.harf = 'X';
                 oyuncu2.harf = 'O';
             }
 

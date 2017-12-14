@@ -12,9 +12,16 @@ namespace TicTacToeOyunu
 {
     public partial class KayitliOyun : Form
     {
+        public OyunTahtasi tahta;
+
         public KayitliOyun()
         {
             InitializeComponent();
+            tahta = new OyunTahtasi();
+        }
+        private void KayitliOyun_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

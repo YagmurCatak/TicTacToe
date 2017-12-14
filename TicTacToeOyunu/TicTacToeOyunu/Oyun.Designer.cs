@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtboyut = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonX = new System.Windows.Forms.RadioButton();
+            this.radioButtonO = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtid
@@ -92,35 +92,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton1
+            // radioButtonX
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(202, 87);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(32, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "X";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonX.AutoSize = true;
+            this.radioButtonX.Location = new System.Drawing.Point(202, 87);
+            this.radioButtonX.Name = "radioButtonX";
+            this.radioButtonX.Size = new System.Drawing.Size(32, 17);
+            this.radioButtonX.TabIndex = 8;
+            this.radioButtonX.TabStop = true;
+            this.radioButtonX.Text = "X";
+            this.radioButtonX.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonO
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(269, 87);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(33, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "O";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonO.AutoSize = true;
+            this.radioButtonO.Location = new System.Drawing.Point(269, 87);
+            this.radioButtonO.Name = "radioButtonO";
+            this.radioButtonO.Size = new System.Drawing.Size(33, 17);
+            this.radioButtonO.TabIndex = 9;
+            this.radioButtonO.TabStop = true;
+            this.radioButtonO.Text = "O";
+            this.radioButtonO.UseVisualStyleBackColor = true;
             // 
             // Oyun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 261);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButtonO);
+            this.Controls.Add(this.radioButtonX);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtboyut);
             this.Controls.Add(this.label3);
@@ -143,7 +143,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtboyut;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButtonX;
+        private System.Windows.Forms.RadioButton radioButtonO;
     }
 }

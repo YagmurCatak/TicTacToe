@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(369, 261);
             this.Name = "KayitliOyun";
             this.Text = "KayitliOyun";
+            this.Load += new System.EventHandler(this.KayitliOyun_Load);
             this.ResumeLayout(false);
 
         }
