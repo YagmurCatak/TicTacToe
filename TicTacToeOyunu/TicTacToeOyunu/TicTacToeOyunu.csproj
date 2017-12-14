@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F94718F8-50EF-4614-8C97-84127E718053}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TicTacToeOyunu</RootNamespace>
     <AssemblyName>TicTacToeOyunu</AssemblyName>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,12 +53,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="KayitliOyun.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KayitliOyun.Designer.cs">
-      <DependentUpon>KayitliOyun.cs</DependentUpon>
-    </Compile>
     <Compile Include="Oyun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KayitliOyun.resx">
-      <DependentUpon>KayitliOyun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Oyun.resx">
       <DependentUpon>Oyun.cs</DependentUpon>

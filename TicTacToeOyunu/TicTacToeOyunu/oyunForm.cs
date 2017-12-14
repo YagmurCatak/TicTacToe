@@ -23,13 +23,6 @@ namespace TicTacToeOyunu
             InitializeComponent();
         }
 
-        public oyunForm(string id,string boyut, string harf)
-        {
-            InitializeComponent();
-            label1.Text = id.ToString();
-            label2.Text = boyut.ToString();
-            label3.Text = harf;
-        }
 
         public oyunForm(Oyuncu oyuncu, Oyuncu oyuncutwo,OyunTahtasi tahta)
         {
@@ -51,7 +44,7 @@ namespace TicTacToeOyunu
                     buton.Width = 50;
                     buton.Location = new System.Drawing.Point(50 + i * buton.Height + 5, 50 + j* buton.Width + 5);
                     buton.Name = "btn-" + i + "-" +j.ToString();
-                    
+                    buton.Text = this.tahta.tahta[j,i].ToString();
                     buton.Click += new System.EventHandler(this.boyutButtonClick);
                     this.Controls.Add(buton);
                     butonMatris[i, j] = buton;
@@ -78,7 +71,6 @@ namespace TicTacToeOyunu
 
            
             do{
-                //ilk parametre i, ikinci parametre j ; i:satir,j:sutun j=x,i=y
                 string[] indis = clickedButton.Name.Split('-');
                 koordinantx = Convert.ToInt32(indis[2].ToString());
                 koordinanty = Convert.ToInt32(indis[1].ToString());
@@ -121,12 +113,10 @@ namespace TicTacToeOyunu
                     //rastgele oluşan koordinantın boş olup olmadığı kontrolü yapılıyor.
                     bilHamlekontrol = tahta.hamleyiYaz(bilgisayarX, bilgisayarY, oyuncu2.harf);
 
-                } while (bilHamlekontrol);
+                } while (!bilHamlekontrol);
 
                 butonMatris[bilgisayarY, bilgisayarX].Text = oyuncu2.harf.ToString();
 
-                
-               
 
                 //bilgisayar hamle yaptıgında kazanıp kazanmadığını kontrol ediyor.
                 bilkazananKontrol = tahta.kazanan(oyuncu2.harf);
@@ -149,88 +139,24 @@ namespace TicTacToeOyunu
 
 
 
-/*
-            do
-            {
-                //ilk parametre i, ikinci parametre j ; i:satir,j:sutun j=x,i=y
-                string[] indis = clickedButton.Name.Split('-');
-                int koordinantx = Convert.ToInt32(indis[2].ToString());
-                int koordinanty = Convert.ToInt32(indis[1].ToString());
-
-                //oyuncunun hamle yapmak istediği koordinant boş mu kontrol edip, boşsa tahtayı ve butonun textini dolduruyor. 
-                oyuncuhamlekontrol = tahta.hamleyiYaz(koordinantx, koordinanty, oyuncu1.harf);
-                if (oyuncuhamlekontrol == true)
-                    clickedButton.Text = oyuncu1.harf.ToString();
-
-                //oyuncu hamle yaptığında kazanıp kazanmadıgının kontrolünü yapıyor. 
-                oyuncukazananKontrol = tahta.kazanan(oyuncu1.harf);
-                if (oyuncukazananKontrol == true)
-                {
-                    MessageBox.Show(oyuncu1.id + "Kazandi");
-                    kazandi = 1;
-                    break;
-                }
-                else
-                {
-                    //oyunun berabere olup olmadıgını kontrol eder. 
-                    oyuncuberaberkontrol = tahta.beraberlikKontrol();
-                    if (oyuncuberaberkontrol == true)
-                    {
-                        MessageBox.Show("beraber");
-                        break;
-                    }
-                    else
-                    {
-                        //Bilgisayara rastgele koordinant üretimi sağlanıyor. 
-                        String[] bilgisayarHamle = oyuncu2.bilgisayarHamlesiUret(tahta.tahtaBoyutu);
-                        bilgisayarX = Convert.ToInt32(bilgisayarHamle[0].ToString());
-                        bilgisayarY = Convert.ToInt32(bilgisayarHamle[1].ToString());
-
-                        
-                        //rastgele oluşan koordinantın boş olup olmadığı kontrolü yapılıyor.
-                        bilHamlekontrol = tahta.hamleyiYaz(bilgisayarX, bilgisayarY, oyuncu2.harf);
-                        if (bilHamlekontrol == true)
-                            butonMatris[bilgisayarX, bilgisayarY].Text = oyuncu2.harf.ToString();
-                        else
-                            bilHamlekontrol = tahta.hamleyiYaz(bilgisayarX, bilgisayarY, oyuncu2.harf);
-
-                        //bilgisayar hamle yaptıgında kazanıp kazanmadığını kontrol ediyor.
-                        bilkazananKontrol = tahta.kazanan(oyuncu2.harf);
-                        if (bilkazananKontrol == true)
-                        {
-                            MessageBox.Show(oyuncu1.id + "kaybettiniz");
-                            break;
-                        }
-                        else
-                        {
-                            //oyunun berabere olup olmadıgını kontrol eder. 
-                            bilberaberKontrol = tahta.beraberlikKontrol();
-                            if (bilberaberKontrol == true)
-                            {
-                                MessageBox.Show("beraber");
-                                break;
-                            }
-                        }
-                    }
-                       
-                }
-
-            } while (kazandi != 1);
-            */
-                
         }
 
         private void KaydetVeCik()
         {
-            StreamWriter write = new StreamWriter("C:\\Users\\Yagmur\\Desktop\\DorduncuProje\\deneme.txt");
+            StreamWriter write = new StreamWriter("C:\\Users\\Yagmur\\Desktop\\DorduncuProje\\tahta.txt");
             for (int i = 0; i < tahta.tahtaBoyutu; i++)
             {
                 for (int j = 0; j < tahta.tahtaBoyutu; j++)
                 {
-                    write.Write(tahta.tahta[i,j]);
+                    write.Write(tahta.tahta[j,i]);
                 }
                 write.WriteLine();
             }
+
+            StreamWriter harfyaz = new StreamWriter("C:\\Users\\Yagmur\\Desktop\\DorduncuProje\\harf.txt");
+            harfyaz.Write(oyuncu1.harf.ToString() + "-" + oyuncu2.harf.ToString());
+
+            harfyaz.Close();
             write.Close();
             this.Close();
         }

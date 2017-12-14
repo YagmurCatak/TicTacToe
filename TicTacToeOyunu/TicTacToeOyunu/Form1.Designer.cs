@@ -33,7 +33,6 @@
             this.yeniOyunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oyunAçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.farklıKaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kapatToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
@@ -55,7 +54,6 @@
             this.yeniOyunToolStripMenuItem,
             this.oyunAçToolStripMenuItem,
             this.kapatToolStripMenuItem,
-            this.farklıKaydetToolStripMenuItem,
             this.kapatToolStripMenuItem1});
             this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
             this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
@@ -80,12 +78,6 @@
             this.kapatToolStripMenuItem.Name = "kapatToolStripMenuItem";
             this.kapatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kapatToolStripMenuItem.Text = "Kaydet";
-            // 
-            // farklıKaydetToolStripMenuItem
-            // 
-            this.farklıKaydetToolStripMenuItem.Name = "farklıKaydetToolStripMenuItem";
-            this.farklıKaydetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.farklıKaydetToolStripMenuItem.Text = "Farklı Kaydet";
             // 
             // kapatToolStripMenuItem1
             // 
@@ -118,7 +110,6 @@
         private System.Windows.Forms.ToolStripMenuItem yeniOyunToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oyunAçToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kapatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem farklıKaydetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kapatToolStripMenuItem1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
 

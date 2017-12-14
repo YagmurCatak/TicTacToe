@@ -8,5 +8,4 @@ C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\TicTacToeOyunu.pdb
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\TicTacToeOyunu.csprojResolveAssemblyReference.cache
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\TicTacToeOyunu.Oyun.resources
-C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\TicTacToeOyunu.KayitliOyun.resources
 C:\Users\Yagmur\Desktop\DorduncuProje\TicTacToeOyunu\TicTacToeOyunu\obj\Release\TicTacToeOyunu.oyunForm.resources
