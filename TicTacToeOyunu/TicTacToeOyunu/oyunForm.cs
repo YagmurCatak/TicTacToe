@@ -69,16 +69,17 @@ namespace TicTacToeOyunu
             Button clickedButton = (Button)sender;
             int kazandi = 0;
 
-           
-            do{
-                string[] indis = clickedButton.Name.Split('-');
-                koordinantx = Convert.ToInt32(indis[2].ToString());
-                koordinanty = Convert.ToInt32(indis[1].ToString());
+            string[] indis = clickedButton.Name.Split('-');
+            koordinantx = Convert.ToInt32(indis[2].ToString());
+            koordinanty = Convert.ToInt32(indis[1].ToString());
 
-                //oyuncunun hamle yapmak istediği koordinant boş mu kontrol edip, boşsa tahtayı ve butonun textini dolduruyor. 
-                oyuncuhamlekontrol = tahta.hamleyiYaz(koordinantx, koordinanty, oyuncu1.harf);
-               
-            } while (oyuncuhamlekontrol);
+            //oyuncunun hamle yapmak istediği koordinant boş mu kontrol edip, boşsa tahtayı ve butonun textini dolduruyor. 
+            oyuncuhamlekontrol = tahta.hamleyiYaz(koordinantx, koordinanty, oyuncu1.harf);
+            if (oyuncuhamlekontrol != true)
+            {
+                MessageBox.Show( "Farkli bir hamle yapiniz") ;
+                return;
+            }
             clickedButton.Text = oyuncu1.harf.ToString();
 
            
@@ -86,7 +87,7 @@ namespace TicTacToeOyunu
             oyuncukazananKontrol = tahta.kazanan(oyuncu1.harf);
             if (oyuncukazananKontrol == true)
             {
-                MessageBox.Show(oyuncu1.id + "Kazandi");
+                MessageBox.Show(oyuncu1.id + " Kazandi");
                 kazandi = 1;
             }
             else
@@ -122,7 +123,7 @@ namespace TicTacToeOyunu
                 bilkazananKontrol = tahta.kazanan(oyuncu2.harf);
                 if (bilkazananKontrol == true)
                 {
-                    MessageBox.Show(oyuncu1.id + "kaybettiniz");
+                    MessageBox.Show(oyuncu1.id + " kaybettiniz");
                     kazandi = -2;
                 }
                 else
@@ -141,7 +142,7 @@ namespace TicTacToeOyunu
 
         }
 
-        private void KaydetVeCik()
+        public void KaydetVeCik()
         {
             StreamWriter write = new StreamWriter("C:\\Users\\Yagmur\\Desktop\\DorduncuProje\\tahta.txt");
             for (int i = 0; i < tahta.tahtaBoyutu; i++)
@@ -158,7 +159,7 @@ namespace TicTacToeOyunu
 
             harfyaz.Close();
             write.Close();
-            this.Close();
+            Application.Exit();
         }
 
         private void oyunForm_Load(object sender, EventArgs e)
@@ -174,12 +175,10 @@ namespace TicTacToeOyunu
                 {
                     e.Cancel = true;
                     return;
-
                 }
                 else
                 {
                     KaydetVeCik();
-                    //Application.Exit();
                 }
             }
         }

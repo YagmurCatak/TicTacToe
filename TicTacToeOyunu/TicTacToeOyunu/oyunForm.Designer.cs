@@ -68,7 +68,8 @@
             this.Name = "oyunForm";
             this.Text = "oyunForm";
             this.Load += new System.EventHandler(this.oyunForm_Load);
-            this.FormClosing += this.oyunForm_FormClosing;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.oyunForm_FormClosing);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

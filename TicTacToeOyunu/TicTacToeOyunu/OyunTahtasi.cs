@@ -94,9 +94,11 @@ namespace TicTacToeOyunu
                                 break;
                             }
                         }
+                        
                     }
                 }
             }
+    
             if (kontrol == 1)
                 return true;
             else
